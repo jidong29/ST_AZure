@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
+
 <project>
   <fileVersion>2</fileVersion>
   <configuration>
@@ -11,7 +12,7 @@
       <name>General</name>
       <archiveVersion>3</archiveVersion>
       <data>
-        <version>31</version>
+        <version>24</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -31,12 +32,22 @@
           <state>0</state>
         </option>
         <option>
+          <name>Input variant</name>
+          <version>3</version>
+          <state>0</state>
+        </option>
+        <option>
           <name>Input description</name>
-          <state>Full formatting, with multibyte support.</state>
+          <state></state>
+        </option>
+        <option>
+          <name>Output variant</name>
+          <version>2</version>
+          <state>0</state>
         </option>
         <option>
           <name>Output description</name>
-          <state>Full formatting, with multibyte support.</state>
+          <state></state>
         </option>
         <option>
           <name>GOutputBinary</name>
@@ -62,11 +73,11 @@
         </option>
         <option>
           <name>OGProductVersion</name>
-          <state>5.50.5.51996</state>
+          <state>7.80.2.11970</state>
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state>8.32.3.20186</state>
+          <state>7.80.2.11970</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -116,8 +127,8 @@
         </option>
         <option>
           <name>GBECoreSlave</name>
-          <version>27</version>
-          <state>39</state>
+          <version>24</version>
+          <state>38</state>
         </option>
         <option>
           <name>OGUseCmsis</name>
@@ -133,8 +144,8 @@
         </option>
         <option>
           <name>CoreVariant</name>
-          <version>27</version>
-          <state>39</state>
+          <version>24</version>
+          <state>38</state>
         </option>
         <option>
           <name>GFPUDeviceSlave</name>
@@ -156,58 +167,8 @@
         </option>
         <option>
           <name>GFPUCoreSlave2</name>
-          <version>27</version>
-          <state>39</state>
-        </option>
-        <option>
-          <name>OGCMSISPackSelectDevice</name>
-        </option>
-        <option>
-          <name>OgLibHeap</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>OGLibAdditionalLocale</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>OGPrintfVariant</name>
-          <version>0</version>
-          <state>1</state>
-        </option>
-        <option>
-          <name>OGPrintfMultibyteSupport</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>OGScanfVariant</name>
-          <version>0</version>
-          <state>1</state>
-        </option>
-        <option>
-          <name>OGScanfMultibyteSupport</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>GenLocaleTags</name>
-          <state></state>
-        </option>
-        <option>
-          <name>GenLocaleDisplayOnly</name>
-          <state></state>
-        </option>
-        <option>
-          <name>DSPExtension</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>TrustZone</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>TrustZoneModes</name>
-          <version>0</version>
-          <state>0</state>
+          <version>24</version>
+          <state>38</state>
         </option>
       </data>
     </settings>
@@ -215,7 +176,7 @@
       <name>ICCARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>35</version>
+        <version>31</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -334,6 +295,10 @@
           <state>0</state>
         </option>
         <option>
+          <name>CCMultibyteSupport</name>
+          <state>0</state>
+        </option>
+        <option>
           <name>CCDiagWarnAreErr</name>
           <state>0</state>
         </option>
@@ -401,6 +366,10 @@
           <state>.text</state>
         </option>
         <option>
+          <name>IInterwork2</name>
+          <state>0</state>
+        </option>
+        <option>
           <name>IProcessorMode2</name>
           <state>1</state>
         </option>
@@ -449,6 +418,18 @@
         </option>
         <option>
           <name>IccAllowVLA</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IccCppDialect</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccExceptions</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccRTTI</name>
           <state>1</state>
         </option>
         <option>
@@ -457,7 +438,7 @@
         </option>
         <option>
           <name>IccCppInlineSemantics</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IccCmsis</name>
@@ -478,38 +459,10 @@
         <option>
           <name>CCOptStrategySlave</name>
           <version>0</version>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>CCGuardCalls</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>CCEncSource</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>CCEncOutput</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>CCEncOutputBom</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>CCEncInput</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IccExceptions2</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IccRTTI2</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>OICompilerExtraOption</name>
           <state>1</state>
         </option>
       </data>
@@ -518,7 +471,7 @@
       <name>AARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>10</version>
+        <version>9</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -647,6 +600,10 @@
           <state>$FILE_BNAME$.o</state>
         </option>
         <option>
+          <name>AMultibyteSupport</name>
+          <state>0</state>
+        </option>
+        <option>
           <name>ALimitErrorsCheck</name>
           <state>0</state>
         </option>
@@ -732,7 +689,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>22</version>
+        <version>18</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -1024,34 +981,6 @@
           <name>IlinkIcfFile_AltDefault</name>
           <state></state>
         </option>
-        <option>
-          <name>IlinkEncInput</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IlinkEncOutput</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IlinkEncOutputBom</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>IlinkHeapSelect</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>IlinkLocaleSelect</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>IlinkTrustzoneImportLibraryOut</name>
-          <state>###Unitialized###</state>
-        </option>
-        <option>
-          <name>OILinkExtraOption</name>
-          <state>1</state>
-        </option>
       </data>
     </settings>
     <settings>
@@ -1086,6 +1015,15 @@
     <group>
       <name>Azure</name>
       <file>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\samples\STM32Cube_sample\azure_sha1.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\samples\STM32Cube_sample\azure_version.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\samples\STM32Cube_sample\AzureXcubeSample.c</name>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\adapters\hsm_client_riot_STM32Cube.c</name>
       </file>
       <file>
@@ -1109,41 +1047,53 @@
       <file>
         <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\c-utility\adapters\tlsio_mbedtls.c</name>
       </file>
+    </group>
+    <group>
+      <name>EWARM</name>
       <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\samples\STM32Cube_sample\azure_sha1.c</name>
+        <name>$PROJ_DIR$\startup_stm32f413xx.s</name>
+      </file>
+    </group>
+    <group>
+      <name>Time</name>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Utilities\Time\STM32CubeRTCInterface.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\samples\STM32Cube_sample\azure_version.c</name>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Utilities\Time\timedate.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\samples\STM32Cube_sample\AzureXcubeSample.c</name>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Utilities\Time\timingSystem.c</name>
       </file>
     </group>
     <group>
       <name>User</name>
       <file>
-        <name>$PROJ_DIR$\..\Src\main.c</name>
+        <name>$PROJ_DIR$\..\Src\flash_f4.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Src\stm32f4xx_it.c</name>
+        <name>$PROJ_DIR$\..\Src\main.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\Src\mbedtls_entropy.c</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\Src\net_conf.c</name>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\Src\stm32f4xx_hal_msp.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Src\flash_f4.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\Src\net_conf.c</name>
+        <name>$PROJ_DIR$\..\Src\stm32f4xx_it.c</name>
       </file>
     </group>
     <group>
       <name>Utils</name>
       <file>
         <name>$PROJ_DIR$\..\..\..\..\..\Misc_Utils\Src\cloud.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Utilities\CLD_utils\http_lib\http_lib.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\..\..\..\..\Misc_Utils\Src\iot_flash_config.c</name>
@@ -1154,34 +1104,7 @@
       <file>
         <name>$PROJ_DIR$\..\Src\set_credentials.c</name>
       </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Utilities\CLD_utils\http_lib\http_lib.c</name>
-      </file>
     </group>
-    <group>
-      <name>Time</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Utilities\Time\STM32CubeRTCInterface.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Utilities\Time\timingSystem.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Utilities\Time\timedate.c</name>
-      </file>
-    </group>
-    <group>
-      <name>EWARM</name>
-      <file>
-        <name>$PROJ_DIR$\startup_stm32f413xx.s</name>
-      </file>
-    </group>
-  </group>
-  <group>
-    <name>Doc</name>
-    <file>
-      <name>$PROJ_DIR$\..\readme.txt</name>
-    </file>
   </group>
   <group>
     <name>BootLoader</name>
@@ -1190,11 +1113,50 @@
     </file>
   </group>
   <group>
+    <name>Doc</name>
+    <file>
+      <name>$PROJ_DIR$\..\readme.txt</name>
+    </file>
+  </group>
+  <group>
     <name>Drivers</name>
+    <group>
+      <name>BSP</name>
+      <group>
+        <name>Components</name>
+        <group>
+          <name>es_wifi</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSPv2\Components\es_wifi\es_wifi.c</name>
+          </file>
+        </group>
+      </group>
+      <group>
+        <name>STM32F413H-Discovery</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSPv2\STM32F413H-Discovery\stm32f413h_discovery.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSPv2\STM32F413H-Discovery\stm32f413h_discovery_bus.c</name>
+        </file>
+      </group>
+    </group>
+    <group>
+      <name>CMSIS</name>
+      <file>
+        <name>$PROJ_DIR$\..\Src\system_stm32f4xx.c</name>
+      </file>
+    </group>
     <group>
       <name>STM32F4xx_HAL_Driver</name>
       <file>
         <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c</name>
@@ -1234,6 +1196,12 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_fmpi2c.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_fmpi2c_ex.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</name>
@@ -1311,55 +1279,148 @@
         <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fmc.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_fmpi2c.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_fmpi2c_ex.c</name>
-      </file>
-      <file>
         <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fsmc.c</name>
       </file>
-    </group>
-    <group>
-      <name>CMSIS</name>
-      <file>
-        <name>$PROJ_DIR$\..\Src\system_stm32f4xx.c</name>
-      </file>
-    </group>
-    <group>
-      <name>BSP</name>
-      <group>
-        <name>Components</name>
-        <group>
-          <name>es_wifi</name>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSPv2\Components\es_wifi\es_wifi.c</name>
-          </file>
-        </group>
-      </group>
-      <group>
-        <name>STM32F413H-Discovery</name>
-        <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSPv2\STM32F413H-Discovery\stm32f413h_discovery.c</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSPv2\STM32F413H-Discovery\stm32f413h_discovery_bus.c</name>
-        </file>
-      </group>
     </group>
   </group>
   <group>
     <name>Middlewares</name>
     <group>
+      <name>ST</name>
+      <group>
+        <name>STM32_Connect_Library</name>
+        <group>
+          <name>core</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\core\net_address.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\core\net_class_extension.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\core\net_core.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\core\net_os.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\core\net_socket.c</name>
+          </file>
+        </group>
+        <group>
+          <name>netif</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\netif\wifi_if\es_wifi\net_es_wifi.c</name>
+          </file>
+        </group>
+        <group>
+          <name>services</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\services\net_mbedtls.c</name>
+          </file>
+        </group>
+      </group>
+    </group>
+    <group>
       <name>Third_Party</name>
       <group>
         <name>azure-iot-sdk-c</name>
+        <group>
+          <name>c-iothub_client</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_client_authorization.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_client_core_ll.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_client_diagnostic.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_client_ll.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_client_retry_control.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_message.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_transport_ll_private.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothubtransport_mqtt_common.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothubtransportmqtt.c</name>
+          </file>
+        </group>
+        <group>
+          <name>c-provisioning_client</name>
+          <group>
+            <name>adapters</name>
+            <file>
+              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\adapters\hsm_client_data.c</name>
+            </file>
+          </group>
+          <group>
+            <name>DICE</name>
+            <file>
+              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\DICE\DiceSha256.c</name>
+            </file>
+          </group>
+          <group>
+            <name>RIoT</name>
+            <file>
+              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotAes128.c</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotBase64.c</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotCrypt.c</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotDerEnc.c</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotEcc.c</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotHmac.c</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotKdf.c</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotSha256.c</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotX509Bldr.c</name>
+            </file>
+          </group>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\iothub_auth_client.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\iothub_security_factory.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\prov_auth_client.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\prov_device_ll_client.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\prov_security_factory.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\prov_transport_mqtt_client.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\prov_transport_mqtt_common.c</name>
+          </file>
+        </group>
         <group>
           <name>c-utility</name>
           <group>
@@ -1451,36 +1512,6 @@
           </file>
         </group>
         <group>
-          <name>c-iothub_client</name>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_client_authorization.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_client_core_ll.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_client_diagnostic.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_client_ll.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_client_retry_control.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_message.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothubtransport_mqtt_common.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothubtransportmqtt.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\iothub_client\src\iothub_transport_ll_private.c</name>
-          </file>
-        </group>
-        <group>
           <name>parson</name>
           <file>
             <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\deps\parson\parson.c</name>
@@ -1536,72 +1567,6 @@
           <file>
             <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\umqtt\src\mqtt_message.c</name>
           </file>
-        </group>
-        <group>
-          <name>c-provisioning_client</name>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\iothub_auth_client.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\iothub_security_factory.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\prov_auth_client.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\prov_device_ll_client.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\prov_security_factory.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\prov_transport_mqtt_client.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\src\prov_transport_mqtt_common.c</name>
-          </file>
-          <group>
-            <name>adapters</name>
-            <file>
-              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\adapters\hsm_client_data.c</name>
-            </file>
-          </group>
-          <group>
-            <name>DICE</name>
-            <file>
-              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\DICE\DiceSha256.c</name>
-            </file>
-          </group>
-          <group>
-            <name>RIoT</name>
-            <file>
-              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotAes128.c</name>
-            </file>
-            <file>
-              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotBase64.c</name>
-            </file>
-            <file>
-              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotCrypt.c</name>
-            </file>
-            <file>
-              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotDerEnc.c</name>
-            </file>
-            <file>
-              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotEcc.c</name>
-            </file>
-            <file>
-              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotHmac.c</name>
-            </file>
-            <file>
-              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotKdf.c</name>
-            </file>
-            <file>
-              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotSha256.c</name>
-            </file>
-            <file>
-              <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\Third_Party\azure-iot-sdk-c\provisioning_client\deps\RIoT\Emulator\RIoT\RIoTCrypt\RiotX509Bldr.c</name>
-            </file>
-          </group>
         </group>
       </group>
       <group>
@@ -1839,41 +1804,7 @@
         </file>
       </group>
     </group>
-    <group>
-      <name>ST</name>
-      <group>
-        <name>STM32_Connect_Library</name>
-        <group>
-          <name>core</name>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\core\net_address.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\core\net_core.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\core\net_os.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\core\net_socket.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\core\net_class_extension.c</name>
-          </file>
-        </group>
-        <group>
-          <name>services</name>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\services\net_mbedtls.c</name>
-          </file>
-        </group>
-        <group>
-          <name>netif</name>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\STM32_Connect_Library\netif\wifi_if\es_wifi\net_es_wifi.c</name>
-          </file>
-        </group>
-      </group>
-    </group>
   </group>
 </project>
+
+
