@@ -56,3 +56,12 @@ dkms.conf
 /Projects/B-L475E-IOT01A/Applications/Cloud/Azure/EWARM/settings
 /Projects/B-L475E-IOT01A/Applications/Cloud/Azure/EWARM/Project.dep
 /Projects/B-L475E-IOT01A/Applications/Cloud/Azure/EWARM/Project.ewt
+/Projects/B-L475E-IOT01A/Applications/BootLoader_OSC/2_Images_SBSFU/EWARM/settings
+/Projects/B-L475E-IOT01A/Applications/BootLoader_OSC/2_Images_SECoreBin/EWARM/B-L475E-IOT01
+/Projects/B-L475E-IOT01A/Applications/BootLoader_OSC/2_Images_SECoreBin/EWARM/settings
+/Projects/B-L475E-IOT01A/Applications/BootLoader_OSC/2_Images_SBSFU/EWARM/Project.dep
+/Projects/B-L475E-IOT01A/Applications/BootLoader_OSC/2_Images_SBSFU/EWARM/Project.ewt
+/Projects/B-L475E-IOT01A/Applications/BootLoader_OSC/2_Images_SBSFU/EWARM/se_interface_appli.o
+/Projects/B-L475E-IOT01A/Applications/BootLoader_OSC/2_Images_SECoreBin/EWARM/Project.ewt
+/Projects/B-L475E-IOT01A/Applications/BootLoader_OSC/2_Images_SECoreBin/EWARM/output.txt
+/Projects/B-L475E-IOT01A/Applications/BootLoader_OSC/2_Images_SECoreBin/EWARM/Project.dep
