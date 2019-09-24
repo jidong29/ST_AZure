@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/Projects/B-L475E-IOT01A/Applications/Cloud/Azure/EWARM/B-L475E-IOT01
+/Projects/STM32F413H-Discovery/Applications/Cloud/Azure/EWARM/STM32F413H-Discovery
+/Projects/STM32F413H-Discovery/Applications/Cloud/Azure/EWARM/settings
+/Projects/B-L475E-IOT01A/Applications/Cloud/Azure/EWARM/settings
+/Projects/B-L475E-IOT01A/Applications/Cloud/Azure/EWARM/Project.dep
+/Projects/B-L475E-IOT01A/Applications/Cloud/Azure/EWARM/Project.ewt
