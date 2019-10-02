@@ -682,7 +682,7 @@
       <archiveVersion>1</archiveVersion>
       <data>
         <prebuild></prebuild>
-        <postbuild>cmd /C  "cmd /C $PROJ_DIR$\..\..\..\BootLoader_OSC\2_Images_SECoreBin\EWARM\PostBuild.bat "$PROJ_DIR$" "$TARGET_PATH$" "$TARGET_DIR$\$CONFIG_NAME$.bin" 1 bigelf"</postbuild>
+        <postbuild></postbuild>
       </data>
     </settings>
     <settings>
@@ -770,7 +770,7 @@
         </option>
         <option>
           <name>IlinkIcfFile</name>
-          <state>$PROJ_DIR$/stm32l475xx_flash_for_sfu.icf</state>
+          <state>$PROJ_DIR$\stm32l475xx_flash.icf</state>
         </option>
         <option>
           <name>IlinkIcfFileSlave</name>
@@ -782,7 +782,7 @@
         </option>
         <option>
           <name>IlinkSuppressDiags</name>
-          <state></state>
+          <state>Li005</state>
         </option>
         <option>
           <name>IlinkTreatAsRem</name>
@@ -1055,9 +1055,6 @@
       </file>
     </group>
     <group>
-      <name>EWARM</name>
-    </group>
-    <group>
       <name>Time</name>
       <file>
         <name>$PROJ_DIR$\..\..\..\..\..\..\Utilities\Time\STM32CubeRTCInterface.c</name>
@@ -1068,9 +1065,6 @@
       <file>
         <name>$PROJ_DIR$\..\..\..\..\..\..\Utilities\Time\timingSystem.c</name>
       </file>
-    </group>
-    <group>
-      <name>Time</name>
     </group>
     <group>
       <name>User</name>

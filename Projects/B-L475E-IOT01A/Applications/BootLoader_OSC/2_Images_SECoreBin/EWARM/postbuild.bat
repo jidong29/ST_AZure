@@ -62,13 +62,15 @@ fc %elfbackup% %elf% >NUL && (goto nothingtodo) || echo "elf has been modified, 
 )
 
 set "command=%python%%prepareimage% enc -k %oemkey% -i %iv% %bin% %sfu%  > %projectdir%\output.txt 2>&1"
+echo "%command%"
 %command%
+echo 444 "%ERRORLEVEL%"
 IF %ERRORLEVEL% NEQ 0 goto :error
-
+echo 2 "%ERRORLEVEL%"
 set "command=%python%%prepareimage% sha256 %bin% %sign% >> %projectdir%\output.txt 2>&1"
 %command%
 IF %ERRORLEVEL% NEQ 0 goto :error
-
+echo 3
 set "command=%python%%prepareimage% pack -k %ecckey%  -r 4 -v %version% -i %iv% -f %sfu% -t %sign% %sfb% -o 512 >> %projectdir%\output.txt 2>&1"
 %command%
 IF %ERRORLEVEL% NEQ 0 goto :error

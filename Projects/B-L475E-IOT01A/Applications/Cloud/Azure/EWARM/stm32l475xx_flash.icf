@@ -17,6 +17,12 @@ define symbol __ICFEDIT_region_SRAM2_end__   = 0x10007FFF;
 define symbol __ICFEDIT_size_cstack__ = 0x3000;
 define symbol __ICFEDIT_size_heap__   = 0x10000;
 /**** End of ICF editor section. ###ICF###*/
+define symbol __ICFEDIT_region_SLOT_0_start__ = 0;
+define symbol __ICFEDIT_region_SLOT_0_end__ = 0;
+define symbol __ICFEDIT_region_SLOT_1_start__ = 0;
+define symbol __ICFEDIT_region_SLOT_1_end__ = 0;
+define symbol __ICFEDIT_region_SWAP_start__ = 0;
+define symbol __ICFEDIT_region_SWAP_end__ = 0;
 
 define memory mem with size = 4G;
 
