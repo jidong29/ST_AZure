@@ -144,7 +144,7 @@ typedef struct EVENT_INSTANCE_TAG
  */
 #ifndef AZURE_USE_STM_DASHBOARD
 /* sensors variables names for IOT Central */
-#define TEMPERATURE temp
+#define TEMPERATURE temperature
 #define HUMIDITY humidity
 #define PRESSURE pressure
 #define ACCELEROMETERX accelerometerX
@@ -637,6 +637,14 @@ static IOTHUBMESSAGE_DISPOSITION_RESULT MessageCallback(IOTHUB_MESSAGE_HANDLE me
       temp[size] = '\0';
 
       msg_info("Received message: %s\n", temp);
+      if (strcmp(temp, "on"))
+      {
+        BSP_LED_Off(LED_GREEN);
+      }
+      else
+      {
+        BSP_LED_On(LED_GREEN);
+      }
 
       EXECUTE_COMMAND_RESULT executeCommandResult = EXECUTE_COMMAND(userContextCallback, temp);
       result =
@@ -1273,10 +1281,10 @@ void cloud_run(void const *arg)
 #if defined(AZURE_DPS_PROOF_OF_POSS)
         /* User interaction to handle the proof of possession */
         /* -------------------------------------------------- */
-        printf("Push the User button (Blue) within the next 5 seconds if you want to generate "
+        printf("Push the User button (Blue) within the next 0.5 seconds if you want to generate "
                "the DPS proof of possession response.\n\n");
 
-        if (Button_WaitForPush(5000) != BP_NOT_PUSHED)
+        if (Button_WaitForPush(500) != BP_NOT_PUSHED)
         {
           char verification_code[128];
           char * response_certificate = NULL;

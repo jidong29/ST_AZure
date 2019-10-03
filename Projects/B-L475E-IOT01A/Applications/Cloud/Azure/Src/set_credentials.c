@@ -53,10 +53,10 @@ int32_t set_network_credentials(net_if_handle_t *pnetif)
 
   if (skip_reconf == true)
   {
-    printf("Push the User button (Blue) within the next 5 seconds if you want to update"
+    printf("Push the User button (Blue) within the next 0.5 seconds if you want to update"
            " the WiFi network configuration.\n\n");
 
-    skip_reconf = (Button_WaitForPush(5000) == BP_NOT_PUSHED);
+    skip_reconf = (Button_WaitForPush(500) == BP_NOT_PUSHED);
   }
 
   if (skip_reconf == false)

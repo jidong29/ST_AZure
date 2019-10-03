@@ -634,59 +634,60 @@ static METHODRETURN_HANDLE DecodeMethod(COMMAND_DECODER_HANDLE_DATA* commandDeco
 /*Codes_SRS_COMMAND_DECODER_01_009: [Whenever CommandDecoder_ExecuteCommand is the command shall be decoded and further dispatched to the actionCallback passed in CommandDecoder_Create.]*/
 EXECUTE_COMMAND_RESULT CommandDecoder_ExecuteCommand(COMMAND_DECODER_HANDLE handle, const char* command)
 {
-    EXECUTE_COMMAND_RESULT result;
-    COMMAND_DECODER_HANDLE_DATA* commandDecoderInstance = (COMMAND_DECODER_HANDLE_DATA*)handle;
-    /*Codes_SRS_COMMAND_DECODER_01_010: [If either the buffer or the receiveCallbackContext argument is NULL, the processing shall stop and the command shall not be dispatched and it shall return EXECUTE_COMMAND_ERROR.]*/
-    if (
-        (command == NULL) ||
-        (commandDecoderInstance == NULL)
-    )
-    {
-        LogError("Invalid argument, COMMAND_DECODER_HANDLE handle=%p, const char* command=%p", handle, command);
-        result = EXECUTE_COMMAND_ERROR;
-    }
-    else
-    {
-        size_t size = strlen(command);
-        char* commandJSON;
+    EXECUTE_COMMAND_RESULT result = EXECUTE_COMMAND_SUCCESS;
+    // command_decoder_handle_data* commanddecoderinstance = (command_decoder_handle_data*)handle;
+    // 
+    // /*codes_srs_command_decoder_01_010: [if either the buffer or the receivecallbackcontext argument is null, the processing shall stop and the command shall not be dispatched and it shall return execute_command_error.]*/
+    // if (
+    //     (command == null) ||
+    //     (commanddecoderinstance == null)
+    // )
+    // {
+    //     logerror("invalid argument, command_decoder_handle handle=%p, const char* command=%p", handle, command);
+    //     result = execute_command_error;
+    // }
+    // else
+    // {
+    //     size_t size = strlen(command);
+    //     char* commandjson;
 
-        /* Codes_SRS_COMMAND_DECODER_01_011: [If the size of the command is 0 then the processing shall stop and the command shall not be dispatched and it shall return EXECUTE_COMMAND_ERROR.]*/
-        if (size == 0)
-        {
-            LogError("Failed because command size is zero");
-            result = EXECUTE_COMMAND_ERROR;
-        }
-        /*Codes_SRS_COMMAND_DECODER_01_013: [If parsing the JSON to a multi tree fails, the processing shall stop and the command shall not be dispatched and it shall return EXECUTE_COMMAND_ERROR.]*/
-        else if ((commandJSON = (char*)malloc(size + 1)) == NULL)
-        {
-            LogError("Failed to allocate temporary storage for the commands JSON");
-            result = EXECUTE_COMMAND_ERROR;
-        }
-        else
-        {
-            MULTITREE_HANDLE commandsTree;
+    //     /* codes_srs_command_decoder_01_011: [if the size of the command is 0 then the processing shall stop and the command shall not be dispatched and it shall return execute_command_error.]*/
+    //     if (size == 0)
+    //     {
+    //         logerror("failed because command size is zero");
+    //         result = execute_command_error;
+    //     }
+    //     /*codes_srs_command_decoder_01_013: [if parsing the json to a multi tree fails, the processing shall stop and the command shall not be dispatched and it shall return execute_command_error.]*/
+    //     else if ((commandjson = (char*)malloc(size + 1)) == null)
+    //     {
+    //         logerror("failed to allocate temporary storage for the commands json");
+    //         result = execute_command_error;
+    //     }
+    //     else
+    //     {
+    //         multitree_handle commandstree;
 
-            (void)memcpy(commandJSON, command, size);
-            commandJSON[size] = '\0';
+    //         (void)memcpy(commandjson, command, size);
+    //         commandjson[size] = '\0';
 
-            /* Codes_SRS_COMMAND_DECODER_01_012: [CommandDecoder shall decode the command JSON contained in buffer to a multi-tree by using JSONDecoder_JSON_To_MultiTree.] */
-            if (JSONDecoder_JSON_To_MultiTree(commandJSON, &commandsTree) != JSON_DECODER_OK)
-            {
-                /* Codes_SRS_COMMAND_DECODER_01_013: [If parsing the JSON to a multi tree fails, the processing shall stop and the command shall not be dispatched and it shall return EXECUTE_COMMAND_ERROR.] */
-                LogError("Decoding JSON to a multi tree failed");
-                result = EXECUTE_COMMAND_ERROR;
-            }
-            else
-            {
-                result = DecodeCommand(commandDecoderInstance, commandsTree);
+    //         /* codes_srs_command_decoder_01_012: [commanddecoder shall decode the command json contained in buffer to a multi-tree by using jsondecoder_json_to_multitree.] */
+    //         if (jsondecoder_json_to_multitree(commandjson, &commandstree) != json_decoder_ok)
+    //         {
+    //             /* codes_srs_command_decoder_01_013: [if parsing the json to a multi tree fails, the processing shall stop and the command shall not be dispatched and it shall return execute_command_error.] */
+    //             logerror("decoding json to a multi tree failed");
+    //             result = execute_command_error;
+    //         }
+    //         else
+    //         {
+    //             result = decodecommand(commanddecoderinstance, commandstree);
 
-                /* Codes_SRS_COMMAND_DECODER_01_016: [CommandDecoder shall ensure that the multi-tree resulting from JSONDecoder_JSON_To_MultiTree is freed after the commands are executed.] */
-                MultiTree_Destroy(commandsTree);
-            }
+    //             /* codes_srs_command_decoder_01_016: [commanddecoder shall ensure that the multi-tree resulting from jsondecoder_json_to_multitree is freed after the commands are executed.] */
+    //             multitree_destroy(commandstree);
+    //         }
 
-            free(commandJSON);
-        }
-    }
+    //         free(commandjson);
+    //     }
+    // }
     return result;
 }
 
@@ -695,6 +696,7 @@ METHODRETURN_HANDLE CommandDecoder_ExecuteMethod(COMMAND_DECODER_HANDLE handle, 
     METHODRETURN_HANDLE result;
     /*Codes_SRS_COMMAND_DECODER_02_014: [ If handle is NULL then CommandDecoder_ExecuteMethod shall fail and return NULL. ]*/
     /*Codes_SRS_COMMAND_DECODER_02_015: [ If fulMethodName is NULL then CommandDecoder_ExecuteMethod shall fail and return NULL. ]*/
+
     if (
         (handle == NULL) ||
         (fullMethodName == NULL) /*methodPayload can be NULL*/

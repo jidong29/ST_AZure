@@ -270,9 +270,9 @@ int platform_init(void)
 
   if ( (skip_reconf == true) && (app_needs_root_ca() || app_needs_device_keypair() || app_needs_iot_config()) )
   {
-    printf("Push the User button (Blue) within the next 5 seconds if you want to update "
+    printf("Push the User button (Blue) within the next 0.5 seconds if you want to update "
            "the device connection parameters.\n\n");
-    skip_reconf = (Button_WaitForPush(5000) == BP_NOT_PUSHED);
+    skip_reconf = (Button_WaitForPush(500) == BP_NOT_PUSHED);
   }
 
   if (skip_reconf == false)
@@ -300,6 +300,7 @@ int platform_init(void)
   if ((setRTCTimeDateFromNetwork(false) != TD_OK) && (setRTCTimeDateFromNetwork(true) != TD_OK))
 #endif  /* CLOUD_TIMEDATE_TLS_VERIFICATION_IGNORE */
   {
+    msg_error("*************************************\n");
     CLOUD_Error_Handler(CLOUD_DEMO_TIMEDATE_ERROR);
     return -1;
   }

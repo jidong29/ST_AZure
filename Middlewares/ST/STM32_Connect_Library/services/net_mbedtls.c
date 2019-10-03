@@ -165,6 +165,7 @@ int32_t net_mbedtls_start(net_socket_t *sock)
       NET_DBG_ERROR(" failed\n  !  mbedtls_x509_crt_parse returned -0x%lx while parsing root cert\n", -ret);
       mbedtls_free_resource(sock);
       return NET_ERROR_MBEDTLS_CRT_PARSE;
+      //ret = 0;
     }
   }
   else

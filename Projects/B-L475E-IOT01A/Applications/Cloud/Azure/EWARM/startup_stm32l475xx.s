@@ -51,6 +51,7 @@
         PUBLIC  __vector_table
 
         DATA
+        
 __vector_table
         DCD     sfe(CSTACK)
         DCD     Reset_Handler             ; Reset Handler
